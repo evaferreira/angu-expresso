@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 // Declaramos en el módulo que el proyecto va a necesitar HttpClient
 import { HttpClientModule } from '@angular/common/http';
+import { ReactiveFormsModule } from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -13,6 +14,7 @@ import { CardWrapperComponent } from './components/card-wrapper/card-wrapper.com
 import { NosotrosComponent } from './pages/nosotros/nosotros.component';
 import { InicioComponent } from './pages/inicio/inicio.component';
 import { ContactoComponent } from './pages/contacto/contacto.component';
+import { BuscarComponent } from './pages/buscar/buscar.component';
 
 @NgModule({
   declarations: [
@@ -24,12 +26,14 @@ import { ContactoComponent } from './pages/contacto/contacto.component';
     CardWrapperComponent,
     NosotrosComponent,
     InicioComponent,
-    ContactoComponent
+    ContactoComponent,
+    BuscarComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
