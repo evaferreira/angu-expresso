@@ -1,0 +1,28 @@
+.card {
+    border-radius: 5px;
+    background-color: var(--blanco);
+    max-width: 200px;
+    &-img {
+        height: 140px;
+        object-fit: cover;
+        border-radius: 5px 5px 0 0;
+    }
+    &-info {
+        &_cat {
+            text-transform: uppercase;
+            font-size: 12px;
+            margin-bottom: 10px;
+        }
+        &_titulo {
+            color: var(--gris);
+        }
+        &_precio {
+            border-top: 1px solid var(--gris);
+            padding: 15px 0;
+        }
+        &_oferta {
+            padding: 2px 3px;
+            background-color: var(--pink);
+        }
+    }
+}

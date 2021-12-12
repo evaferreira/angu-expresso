@@ -1,0 +1,21 @@
+.lista {
+    margin: 30px auto;
+    max-width: 1000px;
+    list-style-type: none;
+    display: flex;
+    background-color: var(--pink);
+
+    &-item {
+        flex-grow: 1;
+
+        &_link {
+            display: block;
+            text-align: center;
+            padding: 4px;
+            
+            &:hover {
+                background-color: var(--hotpink);
+            }
+        }
+    }
+}

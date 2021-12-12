@@ -1,0 +1,16 @@
+
+<div class="card">
+    <img src='{{ imagen }}' alt="" class="card-img">
+    <div class="card-info">
+        <span class='card-info_cat'>
+            {{ categoria }}
+        </span>
+        <h1 class="card-info_titulo">{{ titulo }}</h1>
+        <!-- Si ofertaInfalible es positivo muestro este mensaje -->
+        <p class="card-info_oferta" *ngIf="ofertaInfalible">
+            Oferta infalible
+        </p>
+        
+        <p class='card-info_precio'>${{ precio }}</p>
+    </div>
+</div>
