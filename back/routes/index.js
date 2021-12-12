@@ -5,12 +5,12 @@ var router = express.Router();
 const api = require('../api');
 
 /* GET all books. */
-router.get('/', async (req, res) => {
+router.get('/api/libros', async (req, res) => {
   const books = await api.getBooks();
   res.send(books);
 });
 
-router.get('/libro/:id', async (req, res) => {
+router.get('/api/libro/:id', async (req, res) => {
   // console.log(req.params.id);
   const book = await api.getBookById(req.params.id);
 
@@ -18,7 +18,7 @@ router.get('/libro/:id', async (req, res) => {
 });
 
 /* GET /buscar page */
-router.get('/buscar', async (req, res) => {
+router.get('/api/buscar', async (req, res) => {
   // Conseguir lo que el usuario tipeó en el campo "titulo"
   // const titulo = req.query.titulo;
   const { titulo } = req.query;
